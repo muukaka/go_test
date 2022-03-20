@@ -17,6 +17,10 @@ jobs:
       uses: actions/setup-go@v2
       with:
         check-latest: true
+    - run: go version
 
+    - name: Build
+      run: go build -v ./...
+      
     - name: Test my code
-      run: go run ../../sample_json.go
+      run: go run sample_json.go
