@@ -21,6 +21,3 @@ jobs:
 
     - name: Build
       run: go build -v ./...
-      
-    - name: Test my code
-      run: go run sample_json.go
