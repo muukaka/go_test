@@ -15,4 +15,6 @@ jobs:
 
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v2
+        with:
+          workdir: src/
         
